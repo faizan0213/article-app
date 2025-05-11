@@ -17,8 +17,23 @@ class MainApp extends StatelessWidget {
       create: (_) => ArticleProvider()..fetchArticles(),
       child: MaterialApp(
         title: 'Flutter Article App',
-        theme: ThemeData(primarySwatch: Colors.blue),
-        home:  ArticleApp(),
+        theme: ThemeData(
+          primarySwatch: Colors.orange, // Primary color for the app
+          visualDensity: VisualDensity.adaptivePlatformDensity,
+          appBarTheme: AppBarTheme(
+            backgroundColor: Colors.orange, // Custom AppBar color
+            titleTextStyle: TextStyle(color: Colors.white), // AppBar text color
+          ),
+          scaffoldBackgroundColor:
+              Colors.white, // Background color for the scaffold
+          bottomNavigationBarTheme: BottomNavigationBarThemeData(
+            backgroundColor: Colors
+                .lightBlueAccent, // Bottom navigation bar background color
+            selectedItemColor: Colors.black, // Color for selected item
+            unselectedItemColor: Colors.grey, // Color for unselected item
+          ),
+        ),
+        home: ArticleApp(), // Your main screen widget
         debugShowCheckedModeBanner: false,
       ),
     );

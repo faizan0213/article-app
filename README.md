@@ -42,10 +42,10 @@ Includes search functionality and article detail view.
 ![Home](assets/image1.jpg)
 
 ### Detail Screen
-![Detail](assets/images6.jpg)
+![Detail](assets/image6.jpg)
 
 ### favourite Screen
-![Detail](assets/images4.jpg)
+![Detail](assets/image4.jpg)
 
 
     

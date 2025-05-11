@@ -18,12 +18,13 @@ class HomeScreen extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
-            // Custom Header
             Padding(
+              
               padding:
                   const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12),
               child: Row(
                 children: const [
+                  
                   Icon(Icons.article_outlined, size: 28, color: Colors.blue),
                   SizedBox(width: 8),
                   Text(
